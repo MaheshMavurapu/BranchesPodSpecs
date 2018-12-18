@@ -29,7 +29,10 @@ s.framework = "UIKit"
 # s.dependency 'MBProgressHUD', '~> 1.1.0'
 
 # 8
-s.source_files = "Components/Button/**/*.{swift}"
+s.subspec 'ButtonN' do |ss|
+    ss.source_files = "Components/Button/**/*.{swift}"
+end
+# s.source_files = "Components/Button/**/*.{swift}"
 
 # 9
 # s.resources = "Components/Button/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
