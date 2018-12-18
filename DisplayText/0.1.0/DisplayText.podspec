@@ -29,7 +29,10 @@ s.framework = "UIKit"
 # s.dependency 'MBProgressHUD', '~> 1.1.0'
 
 # 8
-s.source_files = "Components/DisplayText/**/*.{swift}"
+s.subspec 'DisplayText' do |ss|
+    ss.source_files = "Components/DisplayText/**/*.{swift}"
+end
+# s.source_files = "Components/DisplayText/**/*.{swift}"
 
 # 9
 # s.resources = "Components/DisplayText/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
